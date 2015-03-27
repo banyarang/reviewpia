@@ -35,7 +35,10 @@ font-family: 'Nanum Pen Script', serif;
 }
 
 .mainmenu .dropdown-menu li{
-	display: block;
+	/*
+		display: inline-block;
+	*/
+	
 }
 
 
@@ -43,6 +46,8 @@ font-family: 'Nanum Pen Script', serif;
 /*                   Section                                */
 /***********************************************************/
 .section { 
+	padding-top: 20px;
+	top:0;
 	display:block;
 }
 
@@ -52,4 +57,12 @@ font-family: 'Nanum Pen Script', serif;
 /***********************************************************/
 .log {
 	
+}
+
+/***********************************************************/
+/*                   Copy                                  */
+/***********************************************************/
+.copyright {
+	float:right;
+	padding: 0 80px 0 0;
 }
