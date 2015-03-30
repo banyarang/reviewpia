@@ -45,7 +45,7 @@
 <section class="section" id="themes">
 	<div class="container">
 	
-		<h2 class="text-center title">Gallery</h2>
+		<h2 class="text-center title">Trip</h2>
 		<p class="lead text-center">
 			Huge thank you to all people who publish<br>
 			their photos at <a href="http://unsplash.com">Unsplash</a>, thank you guys!

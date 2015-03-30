@@ -53,16 +53,16 @@ public class HomeController {
     	return "about";
     }
     
-    @RequestMapping(value="/gallery", method=RequestMethod.GET)
-    public String gallery() {
-    	logger.info("gallery");
-        return "gallery";
+    @RequestMapping(value="/trip", method=RequestMethod.GET)
+    public String trip() {
+    	logger.info("trip");
+        return "trip";
     }
    
-    @RequestMapping(value="/gallery", method=RequestMethod.POST)
-    public String gallery(String email, String passwd, HttpSession session) throws Exception {
-    	logger.info("gallery");
-    	return "gallery";
+    @RequestMapping(value="/trip", method=RequestMethod.POST)
+    public String trip(String email, String passwd, HttpSession session) throws Exception {
+    	logger.info("trip");
+    	return "trip";
     }
     
     @RequestMapping(value="/manage", method=RequestMethod.GET)
