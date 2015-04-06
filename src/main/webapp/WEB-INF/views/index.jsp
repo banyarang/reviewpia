@@ -23,10 +23,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
 	
     <!-- Custom CSS -->
-    <link href="./resources/css/magister.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="./resources/css/custom.css" rel="stylesheet">
+    <link href="./resources/css/style.css" rel="stylesheet">
      	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,36 +34,34 @@
 	
 </head>
 
-<body class="theme-invert">
+<body>
 
-<%@ include file="./common/navigation.jsp" %>
-
-<!-- Main (Home) section -->
-<section class="section" id="home">
-	<div class="container">
-
-		<div class="row">
-			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
-
-				<!-- Site Title, your name, HELLO msg, etc. -->
-				<h1 class="title">Magister</h1>
-				<h2 class="subtitle">Free html5 template by GetTemplate</h2>
-
-				<!-- Short introductory (optional) -->
-				<h3 class="tagline">
-					Potentially, the best place to tell people why they are here.<br>
-					So, this is a demo page built to showcase the beauty of the template.
-				</h3>
-				
-				<!-- Nice place to describe your site in a sentence or two -->
-				<p><a href="/download/" class="btn btn-default btn-lg">Download template now</a></p>
+	<%@ include file="./common/header.jsp" %>
 	
-			</div> <!-- /col -->
-		</div> <!-- /row -->
-	
-	</div>
-</section>
+    <section id="feature">
+        <div class="container">
+           <div>
+                <h2>하이</h2>
+                <p>지구는 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
 
+            <div class="row">
+                <div>
+                    <div class="col-md-4 col-sm-6">
+                        <div>
+                            <i class="fa fa-bullhorn"></i>
+                            <h2>Fresh and Clean</h2>
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                </div>
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#feature-->
+    
+    <%@ include file="./common/footer.jsp" %>
+    
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
@@ -75,8 +70,17 @@
 
 	<!-- Custom template scripts -->
 	<!-- 
-	<script src="./resources//js/magister.js"></script>
+	<script src="./resources/js/magister.js"></script>
 	 -->
+	 
+	<script>
+	$(document).ready(function() {
+		$('#signin').on('click', function() { 
+			$('#loginForm').attr('action', './login').attr('method', 'post').attr('onSubmit', 'true').submit();
+		}); 
+	});
+	</script>
+	
 </body>
 
 </html>

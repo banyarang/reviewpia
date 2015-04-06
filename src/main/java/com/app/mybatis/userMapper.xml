@@ -11,7 +11,7 @@
     </insert>
 
 	<select id="login" resultType="User">
-        SELECT email, passwd, name, mobile FROM user
+        SELECT seq, email, passwd, name, mobile, blogYn FROM user
         WHERE email = #{email} AND passwd = #{passwd}
     </select>
  

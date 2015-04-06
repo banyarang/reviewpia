@@ -1,20 +1,32 @@
 package com.app.user;
 
 public class User {
+	private String seq;
 	private String email;
-	private String passwd;
+	private String password;
 	private String name;
 	private String mobile;
+	private String blogYn;
 	
 	public User() {}
 
-	public User(String email, String passwd, String name, String mobile) {
+	public User(String seq, String email, String password, String name, String mobile, String blogYn) {
+		this.seq = seq;
 		this.email = email;
-		this.passwd = passwd;
+		this.password = password;
 		this.name = name;
 		this.mobile = mobile;
+		this.blogYn = blogYn;
 	}
 
+	public String getSeq() {
+		return seq;
+	}
+	
+	public void setSeq(String seq) {
+		this.seq = seq;
+	}
+	
 	public String getEmail() {
 		return email;
 	}
@@ -23,12 +35,12 @@ public class User {
 		this.email = email;
 	}
 
-	public String getPasswd() {
-		return passwd;
+	public String getPassword() {
+		return password;
 	}
 	
-	public void setPasswd(String passwd) {
-		this.passwd = passwd;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	public String getName() {
@@ -45,6 +57,14 @@ public class User {
 	
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+	
+	public String getBlogYn() {
+		return blogYn;
+	}
+	
+	public void setBlogYn(String blogYn) {
+		this.blogYn = blogYn;
 	}
 	
 }
