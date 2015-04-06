@@ -27,6 +27,10 @@ public class HomeController {
 	public String home(Model model, HttpSession session) {
 		logger.info("home");
 		
+		if(session.getAttribute("seq") != null){
+			logger.info("email : " + session.getAttribute("seq"));
+		}
+		
 		return "index";
 	}
 	

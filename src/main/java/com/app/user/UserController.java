@@ -48,8 +48,14 @@ public class UserController {
         logger.info("loginUser -> "+ loginUser);
         
         if (loginUser != null) {
-            session.setAttribute("user", loginUser);
-            model.addAttribute("loginUser", loginUser);
+            session.setAttribute("seq", loginUser.getSeq());
+            session.setAttribute("email", loginUser.getBlogYn());
+            session.setAttribute("name", loginUser.getName());
+            session.setAttribute("password", loginUser.getPassword());
+            session.setAttribute("mobile", loginUser.getMobile());
+            session.setAttribute("blogYn", loginUser.getBlogYn());
+            
+            model.addAttribute("loginUser", session);
         } 
         
         return "index";

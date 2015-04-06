@@ -9,7 +9,7 @@
 				</div>
 				<div class="col-sm-6 col-xs-8">
 					<c:choose>
-					<c:when test="${empty loginUser}">
+					<c:when test="${empty sessionScope.seq}">
 						<form class="navbar-form navbar-right" role="search" id="loginForm">
 							<div class="form-group input-group-sm">
 								<input type="text" class="form-control" name="email" placeholder="Email">
@@ -26,7 +26,7 @@
 					</c:when>
 					<c:otherwise>
 						<div>
-							<p class="log-text"><a href="./">Home</a> | ${loginUser.name} </p>
+							<p class="log-text"><a href="./">Home</a> | ${sessionScope.name} </p>
 						</div>
 					</c:otherwise>
 					</c:choose>
