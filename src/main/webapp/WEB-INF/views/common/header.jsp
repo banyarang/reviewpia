@@ -25,7 +25,7 @@
 						</form>
 					</c:when>
 					<c:otherwise>
-						<div>
+						<div style="height:30px;margin-top:8px;margin-bottom:8px;">
 							<p class="log-text"><a href="./">Home</a> | ${sessionScope.name} </p>
 						</div>
 					</c:otherwise>

@@ -49,13 +49,13 @@ public class UserController {
         
         if (loginUser != null) {
             session.setAttribute("seq", loginUser.getSeq());
-            session.setAttribute("email", loginUser.getBlogYn());
+            session.setAttribute("email", loginUser.getEmail());
             session.setAttribute("name", loginUser.getName());
             session.setAttribute("password", loginUser.getPassword());
             session.setAttribute("mobile", loginUser.getMobile());
             session.setAttribute("blogYn", loginUser.getBlogYn());
             
-            model.addAttribute("loginUser", session);
+            //model.addAttribute("loginUser", session);
         } 
         
         return "index";
